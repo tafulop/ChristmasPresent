@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" 
+            minHeight="400" maxHeight="400"
+            minWidth="200" maxWidth="200"     
+            xmlns:fx="http://javafx.com/fxml" 
+            fx:controller="com.homeproject.tafulop.fxtest.FXMLController"  >
+    
+    <children>
+        
+        <Label layoutX="20" layoutY="20" 
+               minHeight="16" minWidth="140" 
+               wrapText="true" 
+               maxWidth="140" 
+               fx:id="usageHintLabel" alignment="CENTER" 
+               
+               text="Az átméretezéshez kattints a gombra, 
+                    majd válaszd ki az átméretezni kívánt képeket. 
+                    Az átméretezett képeket a képek eredeti mappájában 
+                    létrehozott atmeretezett nevű mappában találod." />
+        
+        <Button layoutX="100" layoutY="150" 
+                text="Képek kiválasztása" 
+                onAction="#handleButtonAction" 
+                fx:id="button" 
+                alignment="BASELINE_CENTER"  />
+        
+        <Label layoutX="20" layoutY="180" 
+               minHeight="16" minWidth="69" 
+               fx:id="label" alignment="CENTER" />
+        
+        
+    </children>
+    
+    
+</AnchorPane>
